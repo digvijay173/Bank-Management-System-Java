@@ -1,2 +1,2 @@
 
-### Basic functionalities performed by banks done using java while includes GUI, datasecurity and encryption/decryption.
+### Basic functionalities performed by banks done using java which includes GUI, datasecurity and encryption/decryption.
