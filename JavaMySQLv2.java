@@ -12,7 +12,7 @@ public class JavaMySQLv2
     public static void main(String[] args) throws IOException  
     { 
 		Connection conn = null;
-		Statement stmt = null;
+		Statement stmt = null;	
 		ResultSet rs = null;
 		ResultSet rs1 = null;
 		PreparedStatement pstmt = null;
@@ -26,13 +26,13 @@ public class JavaMySQLv2
 			stmt = conn.createStatement();
 			System.out.println("\nDataBase Connection Established...Server Connected to Database\n");
         // server is listening on port 5056 
-        ServerSocket ss = new ServerSocket(5056); 
+        ServerSocket ss = new ServerSocket(5056);  //Server Socket Object
 		System.out.println("\nBank Server started...Waiting for Customers...\n");
         // running infinite loop for getting 
         // client request 
         while (true)  
         { 
-            Socket s = null; 
+            Socket s = null;  //Client Server Object
               
             try 
             { 
@@ -106,10 +106,10 @@ class ClientHandler extends Thread
     } 
   
     @Override
-    public void run()  
+    public void run()  //t.start()
     { 
         String username; 
-		String password;
+	String password;
         String toreturn;  
          
             try { 
