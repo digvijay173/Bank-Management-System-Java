@@ -1,7 +1,7 @@
 
 # Bank management System using Java.
 
-#### The project includes basic functionalities of the bank management system like credit, deposit, login, check balance, encryption, decryption, etc. in the GUI form using Java Socket Programming.
+#### The project includes basic functionalities of the bank management system like credit, deposit, login, check balance, encryption, decryption, etc. in the GUI form using Java Socket Programming. GUI is done using eclipse.
 
 Functionalities:
 1. Withdraw
