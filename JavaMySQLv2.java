@@ -4,9 +4,9 @@
   
 import java.io.*; 
 import java.text.*; 
-import java.util.*; 
-import java.net.*; 
-import java.sql.*;
+import java.util.*; 	// Basic I/O operations
+import java.net.*; 	//Socket Programming (Networking)
+import java.sql.*;	//Database
 public class JavaMySQLv2 
 { 
     public static void main(String[] args) throws IOException  
