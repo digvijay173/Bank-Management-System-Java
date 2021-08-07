@@ -18,12 +18,12 @@ public class JavaMySQLv2
 		PreparedStatement pstmt = null;
 		PreparedStatement pstmt1 = null;
 		try{
-			String userName_db = "root";  //When you install MySQL that username.
-			String password_db = "Pranav@2000";  //When you install MySQL password provided at that time.
-			String url_db = "jdbc:mysql://localhost:3306/pbl";  //here mysql is name of jdbc driver...PBL is name of database already created.
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			String userName_db = "root"; 		 //When you install MySQL that username.
+			String password_db = "Pranav@2000";  		//When you install MySQL password provided at that time.
+			String url_db = "jdbc:mysql://localhost:3306/pbl";  		//here mysql is name of jdbc driver...PBL is name of database already created.
+			Class.forName("com.mysql.jdbc.Driver").newInstance();		//used to register JDBC server into program.
 			conn = DriverManager.getConnection(url_db, userName_db, password_db);
-			stmt = conn.createStatement();
+			stmt = conn.createStatement(); 		//Used to access our database. It is useful when we are using static SQL statements at runtime.
 			System.out.println("\nDataBase Connection Established...Server Connected to Database\n");
         // server is listening on port 5056 
         ServerSocket ss = new ServerSocket(5056);  //Server Socket Object
